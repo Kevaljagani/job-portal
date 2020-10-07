@@ -1,0 +1,29 @@
+<section class="flex justify-end mt-4 mr-8">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full">
+     <a onclick="document.getElementById('logout').submit()" href="/">Logout</a>
+    </button>
+  </section>
+
+<section class="flex justify-center text-4xl mt-10"><h1>User DashBoard</h1></section>
+
+
+<% for(var i=0; i<hello.length; i++) {%>
+
+<section class="flex justify-center -mb-10 mt-10 ml-10">
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2"><%= hello[i].title %></div>
+    <p class="text-gray-700 text-base">
+      <%= hello[i].description %>
+    </p>
+  </div>
+  <div class="px-6 pt-4 pb-2">
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Skills: <%= hello[i].skill %></span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Salary: <%= hello[i].salary %></span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Experience: <%= hello[i].experience %></span>
+  </div>
+</div>
+<% } %>
+
+
+</section>
